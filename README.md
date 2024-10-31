@@ -3,7 +3,7 @@
 Japanese Talk is an interactive Flutter application designed to teach users the Japanese language through engaging lessons on colors, family members, numbers, and common phrases. The app provides a user-friendly experience to help learners grasp the basics of the language quickly and effectively.
 
 
-Features:
+***Features***
 
 🎨 Colors Page: Learn Japanese names for various colors with interactive visuals.
 
@@ -16,21 +16,21 @@ Features:
 💬 Phrases Page: Familiarize yourself with common Japanese phrases for everyday conversations.
 
 
-Technologies Used:
+***Technologies Used***
 
 Flutter: A UI toolkit for building natively compiled mobile, web, and desktop applications from a single codebase.
 
 Dart: The programming language used to build the app.
 
 
-Technologies Used:
+***Technologies Used***
 
 🦄 Flutter: A UI toolkit for building natively compiled mobile, web, and desktop applications from a single codebase.
 
 💻 Dart: The programming language used for building the app.
 
 
-Setup and Installation:
+***Setup and Installation***
 
 
 Ensure you have Flutter installed. Follow the official Flutter installation guide.
@@ -44,13 +44,14 @@ Could you clone this repository to your local machine?
 Use flutter run to start the app.
 
 
-Usage:
+***Usage***
 
 Once the application is running, you can:
 
 🖱️ Navigate through the Home Page to access different lessons.
 
 📖 Tap on the respective pages to learn about colors, family members, numbers, and phrases.
+
 
 Connect with Me
 

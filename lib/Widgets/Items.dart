@@ -68,7 +68,7 @@ class PhrasesItem extends StatelessWidget {
             children: [
               Text(phrase.phrase,
                   style: const TextStyle(
-                      fontSize: 20, fontWeight: FontWeight.bold)),
+                      fontSize: 16, fontWeight: FontWeight.bold)),
               Text(phrase.meaning, style: const TextStyle(fontSize: 10))
             ],
           ),

@@ -9,7 +9,7 @@ class Phrasespage extends StatelessWidget {
     PhraseModel(
       phrase: "1- are you coming",
       sound: "sounds/phrases/are_you_coming.wav",
-      meaning: 'Kimasu ka || 来ますか',
+      meaning: 'Kimasu ka ',
     ),
     PhraseModel(
       phrase: "2- don't forget to subscribe",
@@ -19,17 +19,17 @@ class Phrasespage extends StatelessWidget {
     PhraseModel(
       phrase: "3- how are you feeling",
       sound: "sounds/phrases/how_are_you_feeling.wav",
-      meaning: 'Go kibun wa ikagadesu ka. || 元気出してください',
+      meaning: 'Go kibun wa ikagadesu ka.',
     ),
     PhraseModel(
       phrase: "4- i love you programming",
       sound: "sounds/phrases/i_love_programming.wav",
-      meaning: 'Puroguramingu ga daisukidesu || 動物大好き',
+      meaning: 'Puroguramingu ga daisukidesu ',
     ),
     PhraseModel(
       phrase: "5- programming is easy",
       sound: "sounds/phrases/programming_is_easy.wav",
-      meaning: 'Puroguramingu wa kantan || 動物大好き',
+      meaning: 'Puroguramingu wa kantan ',
     ),
     PhraseModel(
       phrase: "6- what is your name",
@@ -39,12 +39,12 @@ class Phrasespage extends StatelessWidget {
     PhraseModel(
       phrase: "7- where are you going",
       sound: "sounds/phrases/where_are_you_going.wav",
-      meaning: 'Doko ni iku no || どこに行くの',
+      meaning: 'Doko ni iku no ',
     ),
     PhraseModel(
       phrase: "8- yes im coming",
       sound: "sounds/phrases/yes_im_coming.wav",
-      meaning: 'Hai, ikimasu || はい、行きます',
+      meaning: 'Hai, ikimasu ',
     ),
   ];
   @override

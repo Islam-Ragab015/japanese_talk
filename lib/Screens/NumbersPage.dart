@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:jabanese_talk/Models/numbersModel.dart';
 import 'package:jabanese_talk/Widgets/Items.dart';
 
@@ -30,17 +31,27 @@ class Numberspage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Numbers"),
-          backgroundColor: Colors.deepPurpleAccent,
+      appBar: AppBar(
+        title: Text(
+          "Numbers",
+          style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 2, right: 2, top: 1, bottom: 1),
-          child: ListView.builder(
-            itemCount: myNumbers.length,
-            itemBuilder: (context, index) =>
-                GeneralItem(number: myNumbers[index]),
+        backgroundColor: Colors.deepPurpleAccent,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView.builder(
+          itemCount: myNumbers.length,
+          itemBuilder: (context, index) => Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            margin: const EdgeInsets.symmetric(vertical: 8),
+            elevation: 4,
+            child: GeneralItem(number: myNumbers[index]),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

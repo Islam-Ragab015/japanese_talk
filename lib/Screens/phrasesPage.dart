@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:jabanese_talk/Models/phrasesModel.dart';
 import 'package:jabanese_talk/Widgets/Items.dart';
 
@@ -13,7 +14,7 @@ class Phrasespage extends StatelessWidget {
     PhraseModel(
       phrase: "2- don't forget to subscribe",
       sound: "sounds/phrases/dont_forget_to_subscribe.wav",
-      meaning: 'Kōdoku o wasurenaide kudasai || 後悔しないでください',
+      meaning: 'Kōdoku o wasurenaide kudasai ',
     ),
     PhraseModel(
       phrase: "3- how are you feeling",
@@ -33,7 +34,7 @@ class Phrasespage extends StatelessWidget {
     PhraseModel(
       phrase: "6- what is your name",
       sound: "sounds/phrases/what_is_your_name.wav",
-      meaning: 'Anata no namae wa nanidesu ka || 名前を教えてください',
+      meaning: 'Anata no namae wa nanidesu ka ',
     ),
     PhraseModel(
       phrase: "7- where are you going",
@@ -49,17 +50,27 @@ class Phrasespage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Phrases"),
-          backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: Text(
+          "Phrases",
+          style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 2, right: 2, top: 1, bottom: 1),
-          child: ListView.builder(
-            itemCount: myPhrases.length,
-            itemBuilder: (context, index) =>
-                PhrasesItem(phrase: myPhrases[index]),
+        backgroundColor: Colors.grey,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView.builder(
+          itemCount: myPhrases.length,
+          itemBuilder: (context, index) => Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            margin: const EdgeInsets.symmetric(vertical: 8),
+            elevation: 4,
+            child: PhrasesItem(phrase: myPhrases[index]),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:jabanese_talk/Models/numbersModel.dart';
 import 'package:jabanese_talk/Widgets/Items.dart';
 
@@ -43,17 +44,27 @@ class ColorsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Colors"),
-          backgroundColor: Colors.brown,
+      appBar: AppBar(
+        title: Text(
+          "Colors",
+          style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 2, right: 2, top: 1, bottom: 1),
-          child: ListView.builder(
-            itemCount: myColors.length,
-            itemBuilder: (context, index) =>
-                GeneralItem(number: myColors[index]),
+        backgroundColor: Colors.brown,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView.builder(
+          itemCount: myColors.length,
+          itemBuilder: (context, index) => Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            margin: const EdgeInsets.symmetric(vertical: 8),
+            elevation: 4,
+            child: GeneralItem(number: myColors[index]),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

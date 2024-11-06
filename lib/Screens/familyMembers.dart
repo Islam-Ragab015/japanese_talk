@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:jabanese_talk/Models/numbersModel.dart';
 import 'package:jabanese_talk/Widgets/Items.dart';
 
@@ -52,17 +53,27 @@ class Familymembers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Family Members"),
-          backgroundColor: Colors.green,
+      appBar: AppBar(
+        title: Text(
+          "Family Members",
+          style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        body: Padding(
-          padding: const EdgeInsets.only(left: 2, right: 2, top: 1, bottom: 1),
-          child: ListView.builder(
-            itemCount: myFamily.length,
-            itemBuilder: (context, index) =>
-                GeneralItem(number: myFamily[index]),
+        backgroundColor: Colors.green,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListView.builder(
+          itemCount: myFamily.length,
+          itemBuilder: (context, index) => Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            margin: const EdgeInsets.symmetric(vertical: 8),
+            elevation: 4,
+            child: GeneralItem(number: myFamily[index]),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

@@ -59,19 +59,19 @@ Once the application is running, you can:
 Here are some screenshots showcasing the key features of **Japanese Talk**:
 
 ### Home Page  
-![Home Page](assets/images/screenshots/home.png)  
+![Home Page](assets/screenshots/home.png)  
 
 ### Numbers Page  
-![Numbers Page](assets/images/screenshots/numbers.png)  
+![Numbers Page](assets/screenshots/numbers.png)  
 
 ### Family Page  
-![Family Page](assets/images/screenshots/family.png)  
+![Family Page](assets/screenshots/family.png)  
 
 ### Colors Page  
-![Colors Page](assets/images/screenshots/colors.png)  
+![Colors Page](assets/screenshots/colors.png)  
 
 ### Phrases Page  
-![Phrases Page](assets/images/screenshots/phrases.png)  
+![Phrases Page](assets/screenshots/phrases.png)  
 
 ---
 
